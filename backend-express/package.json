@@ -1,0 +1,30 @@
+{
+  "name": "backend-express-vaccune",
+  "version": "1.0.0",
+  "description": "API para la gestión de vacunas y pacientes - Prueba DTI MSPAS",
+  "main": "src/index.js",
+  "type": "module",
+  "author": "chak",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.0",
+    "sequelize": "^6.37.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9",
+    "typescript": "^5.8.3"
+  }
+}
