@@ -7,6 +7,11 @@ const Vacuna = sequelize.define('Vacuna', {
     autoIncrement: true,
     primaryKey: true
   },
+  id_paciente: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  }
+  ,
   tipo_vacuna: {
     type: DataTypes.INTEGER,
     allowNull: false

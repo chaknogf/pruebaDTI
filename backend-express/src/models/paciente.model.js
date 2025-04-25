@@ -30,4 +30,6 @@ const Paciente = sequelize.define('Paciente', {
   }
 });
 
+
+
 export default Paciente;

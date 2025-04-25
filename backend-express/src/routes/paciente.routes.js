@@ -17,7 +17,7 @@ const router = Router();
  *     summary: Obtener todos los pacientes
  *     tags: [Pacientes]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *      
  *     responses:
  *       200:
@@ -34,7 +34,7 @@ router.get('/', verifyToken, pt.getAllPacientes);
  *     summary: Obtener un paciente por ID
  *     tags: [Pacientes]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -59,7 +59,7 @@ router.get('/:id', verifyToken, pt.getPaciente);
  *     summary: Crear un nuevo paciente
  *     tags: [Pacientes]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -106,7 +106,7 @@ router.post('/', verifyToken, pt.createPaciente);
  *     summary: Actualizar un paciente existente
  *     tags: [Pacientes]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -151,7 +151,7 @@ router.put('/:id', verifyToken, pt.updatePaciente);
  *     summary: Eliminar un paciente
  *     tags: [Pacientes]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *     parameters:
  *       - in: path
  *         name: id

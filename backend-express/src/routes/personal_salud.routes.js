@@ -17,7 +17,7 @@ const router = Router();
  *     summary: Obtener todo el personal de salud
  *     tags: [PersonalSalud]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *     responses:
  *       200:
  *         description: Lista de personal
@@ -31,7 +31,7 @@ router.get('/', verifyToken, getAllPersonal);
  *     summary: Obtener personal por ID
  *     tags: [PersonalSalud]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *     parameters:
  *       - name: id
  *         in: path
@@ -51,7 +51,7 @@ router.get('/:id', verifyToken, getPersonal);
  *     summary: Crear nuevo personal de salud
  *     tags: [PersonalSalud]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -78,7 +78,7 @@ router.post('/', verifyToken, createPersonal);
  *     summary: Actualizar personal de salud
  *     tags: [PersonalSalud]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *     parameters:
  *       - name: id
  *         in: path
@@ -104,7 +104,7 @@ router.put('/:id', verifyToken, updatePersonal);
  *     summary: Eliminar personal de salud
  *     tags: [PersonalSalud]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *     parameters:
  *       - name: id
  *         in: path

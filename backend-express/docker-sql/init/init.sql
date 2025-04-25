@@ -28,6 +28,8 @@ CREATE TABLE personal_salud (
 
 CREATE TABLE vacuna (
   id INT AUTO_INCREMENT PRIMARY KEY,
+  id_paciente INT,
+  FOREIGN KEY (id_paciente) REFERENCES paciente(id),
   tipo_vacuna INT,
   fecha_aplicacion DATE,
   lote VARCHAR(20),

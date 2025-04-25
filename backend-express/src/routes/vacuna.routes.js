@@ -17,7 +17,7 @@ const router = Router();
  *     summary: Obtener todas las vacunas
  *     tags: [Vacunas]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *     responses:
  *       200:
  *         description: Lista de vacunas
@@ -31,7 +31,7 @@ router.get('/', verifyToken, getAllVacunas);
  *     summary: Obtener vacuna por ID
  *     tags: [Vacunas]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *     parameters:
  *       - name: id
  *         in: path
@@ -51,7 +51,7 @@ router.get('/:id', verifyToken, getVacuna);
  *     summary: Crear una nueva vacuna
  *     tags: [Vacunas]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -81,7 +81,7 @@ router.post('/', verifyToken, createVacuna);
  *     summary: Actualizar datos de una vacuna
  *     tags: [Vacunas]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *     parameters:
  *       - name: id
  *         in: path
@@ -107,7 +107,7 @@ router.put('/:id', verifyToken, updateVacuna);
  *     summary: Eliminar una vacuna
  *     tags: [Vacunas]
  *     security:
- *       - bearerAuth: []
+ *       - basicAuth: []
  *     parameters:
  *       - name: id
  *         in: path

@@ -20,10 +20,12 @@ const swaggerDefinition = {
   ],
   components: {
     securitySchemes: {
-      bearerAuth: {
+      
+      basicAuth: {
         type: 'http',
-        scheme: 'bearer',
+        scheme: 'basic',
         bearerFormat: 'JWT'
+
       }
     }
   },
